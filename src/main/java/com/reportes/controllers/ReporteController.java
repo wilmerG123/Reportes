@@ -36,7 +36,7 @@ public class ReporteController {
 		
 			JRBeanCollectionDataSource beanCollectionDataSource = new JRBeanCollectionDataSource(repo.getAll());
 			
-			JasperReport compileReport = JasperCompileManager.compileReport(new FileInputStream("src/main/resources/modelo.jrxml"));
+			JasperReport compileReport = JasperCompileManager.compileReport(new FileInputStream("src/java.main/resources/modelo.jrxml"));
 			
 			HashMap <String,Object> map = new HashMap<>();
 			
